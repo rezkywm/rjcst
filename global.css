@@ -1,0 +1,291 @@
+:root {
+    --pb: 1.5em;
+    --pd: var(--pb) 24em;
+    --clr-primary: linear-gradient(211.03deg, #1855F0 14.97%, #D218F0 100%);
+    --clr-hover: linear-gradient(211.03deg, hsl(223, 88%, 48%) 14.97%, hsl(292, 88%, 48%) 100%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.blur {
+    backdrop-filter: blur(64px) brightness(70%);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    padding: var(--pd);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+svg {
+    fill: #fff;
+}
+
+nav a {
+    display: inline-block;
+    color: inherit;
+    text-underline-offset: 3px;
+    text-decoration-color: #D218F0;
+}
+
+nav a:hover {
+    text-underline-offset: 5px;
+    text-decoration-color: #1855F0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: var(--pd);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Typewriter__wrapper img {
+    display: inline;
+    max-width: 7%;
+}
+
+h1,
+.content>* {
+    align-self: flex-start;
+}
+
+.content a {
+    border-radius: 12px;
+    background: var(--clr-primary);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content a:hover {
+    background: var(--clr-hover);
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--pd);
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --pb: .9em;
+        --pd: var(--pb) 1.5em;
+    }
+
+    header {
+        font-size: .9rem;
+        padding: var(--pd);
+    }
+
+    nav svg {
+        width: 24px;
+    }
+
+    main {
+        gap: 16px;
+        padding: var(--pd);
+    }
+
+    p {
+        font-size: .82rem;
+    }
+
+    .content a {
+        padding: 1em 1.5em;
+        font-size: .8rem;
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.44rem;
+    }
+
+    footer {
+        padding: var(--pd);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --pd: var(--pb) 6em;
+    }
+
+    header {
+        padding: var(--pd);
+    }
+
+    nav svg {
+        width: 32px;
+    }
+
+    main {
+        padding: var(--pd);
+    }
+
+    .content a {
+        padding: 1em 1.5em;
+        font-size: .85rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    footer {
+        padding: var(--pd);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --pd: var(--pb) 12em;
+    }
+
+    header {
+        padding: var(--pd);
+    }
+
+    main {
+        padding: var(--pd);
+    }
+
+    .content a {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: var(--pd);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        --pd: var(--pb) 16em;
+    }
+
+    header {
+        padding: var(--pd);
+    }
+
+    main {
+        gap: 20px;
+        padding: var(--pd);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: var(--pd);
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    :root {
+        --pd: var(--pb) 24em;
+    }
+
+    header {
+        padding: var(--pd);
+    }
+
+    main {
+        gap: 24px;
+        padding: var(--pd);
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        max-width: 75%;
+    }
+}
