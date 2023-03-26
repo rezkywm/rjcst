@@ -119,6 +119,8 @@ h1,
     align-self: flex-start;
 }
 
+
+
 .content a {
     border-radius: 12px;
     background: var(--clr-primary);
@@ -164,7 +166,7 @@ footer {
     }
 
     nav svg {
-        width: 24px;
+        max-width: 24px;
     }
 
     main {
@@ -172,18 +174,10 @@ footer {
         padding: var(--pd);
     }
 
-    p {
-        font-size: .82rem;
-    }
-
     .content a {
         padding: 1em 1.5em;
         font-size: .8rem;
         min-width: 100%;
-    }
-
-    h1 {
-        font-size: 1.44rem;
     }
 
     footer {
@@ -201,7 +195,7 @@ footer {
     }
 
     nav svg {
-        width: 32px;
+        max-width: 32px;
     }
 
     main {
@@ -211,10 +205,6 @@ footer {
     .content a {
         padding: 1em 1.5em;
         font-size: .85rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
     }
 
     footer {
@@ -256,10 +246,6 @@ footer {
     main {
         gap: 20px;
         padding: var(--pd);
-    }
-
-    h1 {
-        font-size: 3rem;
     }
 
     footer {
