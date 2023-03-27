@@ -58,7 +58,7 @@ body {
 }
 
 .blur {
-    backdrop-filter: blur(64px) brightness(70%);
+    backdrop-filter: blur(64px) brightness(70%) saturate(256%);
 }
 
 header {
@@ -118,8 +118,6 @@ h1,
 .content>* {
     align-self: flex-start;
 }
-
-
 
 .content a {
     border-radius: 12px;
