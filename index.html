@@ -38,6 +38,7 @@
                         d="M19.2681 3.26809C17.4256 3.26809 15.9319 4.76174 15.9319 6.60426C15.9319 8.44678 17.4256 9.94042 19.2681 9.94042H22.6043V6.60426C22.6043 4.76174 21.1106 3.26809 19.2681 3.26809Z" />
                 </svg>
                 <a href="https://dribbble.com/rjc_st" target="_blank">Portfolio</a>
+                <button id="darkmode" onclick="darkmode.toggle();">🌓</button>
             </nav>
         </header>
         <main>
@@ -71,31 +72,13 @@
             </div>
         </footer>
     </div>
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script defer>
-        var app = document.getElementById('app');
-
-        var typewriter = new Typewriter(app, {
-            loop: false,
-            delay: 75,
-            cursor: ''
-        });
-
-        typewriter
-            .typeString('Sleek. ')
-            .pauseFor(500)
-            .typeString('Modern. ')
-            .pauseFor(500)
-            .typeString('Intuitive.')
-            .start();
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
     <script defer>
         const haloConfig = {
             el: 'body',
-            mouseControls: true,
-            touchControls: true,
+            mouseControls: false,
+            touchControls: false,
             gyroControls: false,
             minHeight: 200,
             minWidth: 200,
@@ -121,17 +104,27 @@
         }
 
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        const options = {
-            right: '7px', // default: 'unset'
-            time: '0.5s', // default: '0.3s'
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script defer>
+        var app = document.getElementById('app');
 
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
+        var typewriter = new Typewriter(app, {
+            loop: false,
+            delay: 75,
+            cursor: ''
+        });
+
+        typewriter
+            .typeString('Sleek. ')
+            .pauseFor(500)
+            .typeString('Modern. ')
+            .pauseFor(500)
+            .typeString('Intuitive.')
+            .start();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script defer>
+        const darkmode = new Darkmode();
     </script>
 </body>
 
