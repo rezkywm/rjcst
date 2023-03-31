@@ -38,7 +38,6 @@
                         d="M19.2681 3.26809C17.4256 3.26809 15.9319 4.76174 15.9319 6.60426C15.9319 8.44678 17.4256 9.94042 19.2681 9.94042H22.6043V6.60426C22.6043 4.76174 21.1106 3.26809 19.2681 3.26809Z" />
                 </svg>
                 <a href="https://dribbble.com/rjc_st" target="_blank">Portfolio</a>
-                <button id="darkmode" onclick="darkmode.toggle();">🌓</button>
             </nav>
         </header>
         <main>
@@ -77,9 +76,9 @@
     <script defer>
         const haloConfig = {
             el: 'body',
-            mouseControls: false,
-            touchControls: false,
-            gyroControls: false,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
             minHeight: 200,
             minWidth: 200,
             baseColor: 0x1855F0,
@@ -121,10 +120,6 @@
             .pauseFor(500)
             .typeString('Intuitive.')
             .start();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script defer>
-        const darkmode = new Darkmode();
     </script>
 </body>
 
