@@ -159,6 +159,7 @@ footer {
 
 .darkmode-layer,
 .darkmode-toggle {
+    margin: var(--pd);
     z-index: 500;
 }
 
