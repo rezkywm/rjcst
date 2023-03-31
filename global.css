@@ -1,7 +1,6 @@
 :root {
     --pb: 1.5em;
     --pd: var(--pb) 24em;
-    --clr-primary: linear-gradient(211.03deg, hsl(223, 88%, 72%) 14.97%, hsl(292, 88%, 52%) 100%);
 }
 
 *,
@@ -79,10 +78,6 @@ svg {
     fill: #fff;
 }
 
-a svg {
-    fill: #D218F0;
-}
-
 nav a {
     display: inline-block;
     color: inherit;
@@ -114,16 +109,10 @@ main {
     align-items: center;
 }
 
-#cursor {
-    background: var(--clr-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 h1 {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(to left, #1855F0 14.97%, #D218F0 100%);
+    background: linear-gradient(to left, hsl(223, 100%, 52%) 14.97%, #D218F0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -166,6 +155,17 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 6px;
+}
+
+.darkmode-layer,
+.darkmode-toggle {
+    z-index: 500;
+}
+
+@media only screen and (max-width: 280px) {
+    h1 {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
