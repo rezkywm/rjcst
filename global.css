@@ -109,17 +109,17 @@ main {
 }
 
 h1 {
-    font-size: 3.1rem;
+    font-size: 2.8rem;
     font-weight: 800;
-    background: linear-gradient(to left, hsl(223, 100%, 62%) 14.97%, #D218F0 100%);
+    background: linear-gradient(to left, #1855F0 14.97%, #D218F0 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .content a {
+    background-color: hsl(292, 88%, 42%);
     border-radius: 12px;
-    outline: 2px solid #D218F0;
     color: inherit;
     text-decoration: none;
     font-weight: 700;
@@ -135,7 +135,8 @@ p {
 
 .content a:hover,
 .content a:active {
-    background-color: hsl(292, 88%, 42%);
+    outline: 1.2px solid #D218F0;
+    background-color: transparent;
 }
 
 .social-icons {
@@ -240,14 +241,18 @@ footer {
         padding: var(--pd);
     }
 
+    h1{
+        font-size: 4rem;
+    }
+
     footer {
         padding: var(--pd);
     }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1868px) {
     :root {
-        --pd: var(--pb) 24em;
+        --pd: var(--pb) 27em;
     }
 
     header {
@@ -257,5 +262,9 @@ footer {
     main {
         gap: 24px;
         padding: var(--pd);
+    }
+
+    h1{
+        font-size: 8rem;
     }
 }
