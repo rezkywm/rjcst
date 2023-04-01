@@ -56,8 +56,8 @@ body {
 }
 
 .blur {
-    backdrop-filter: blur(128px) brightness(50%) saturate(256%);
-    -webkit-backdrop-filter: blur(128px) brightness(50%) saturate(256%);
+    backdrop-filter: blur(128px) brightness(40%) saturate(256%);
+    -webkit-backdrop-filter: blur(128px) brightness(40%) saturate(256%);
 }
 
 header {
@@ -111,7 +111,7 @@ main {
 h1 {
     font-size: 2.8rem;
     font-weight: 800;
-    background: linear-gradient(to left, #1855F0 14.97%, #D218F0 100%);
+    background: linear-gradient(-100deg, #1855F0 14.97%, #D218F0 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -130,7 +130,7 @@ h1 {
 }
 
 p {
-    max-width: 50ch;
+    max-width: 35ch;
 }
 
 .content a:hover,
@@ -222,6 +222,10 @@ footer {
         padding: var(--pd);
     }
 
+    h1 {
+        font-size: 3.3rem;
+    }
+
     footer {
         padding: var(--pd);
     }
@@ -241,12 +245,16 @@ footer {
         padding: var(--pd);
     }
 
-    h1{
+    h1 {
         font-size: 4rem;
     }
 
     footer {
         padding: var(--pd);
+    }
+
+    p {
+        max-width: 55ch;
     }
 }
 
@@ -264,7 +272,7 @@ footer {
         padding: var(--pd);
     }
 
-    h1{
+    h1 {
         font-size: 8rem;
     }
 }
