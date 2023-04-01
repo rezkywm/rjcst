@@ -43,10 +43,10 @@
         <main>
             <h1 id="app"></h1>
             <section class="content">
-                <p>Transform your app with stunning UI Design. From increasing engagement to driving
+                <p>Transform your app with stunning looks. From increasing engagement to driving
                     conversions, we'll help you achieve your goals. Let's elevate your business with our
-                    custom designs.</p>
-                <a href="https://www.fiverr.com/rjc_st" target="_blank">Contact us</a>
+                    UI Designs.</p>
+                <a href="https://www.fiverr.com/rjcstudioss" target="_blank">Contact us</a>
             </section>
         </main>
         <footer>
@@ -76,16 +76,16 @@
     <script defer>
         const haloConfig = {
             el: 'body',
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: true,
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
             minHeight: 200,
             minWidth: 200,
             baseColor: 0x1855F0,
             amplitudeFactor: 0,
-            backgroundColor: 0x0,
-            xOffset: 0.1,
-            size: 1.30
+            backgroundColor: 0xf,
+            xOffset: 0.12,
+            size: 1.00
         };
 
         if (window.VANTA) {
@@ -95,8 +95,8 @@
             if (mediaQuery.matches) {
                 window.VANTA.HALO({
                     ...haloConfig,
-                    xOffset: 0.09,
-                    yOffset: 0.05,
+                    xOffset: 0.10,
+                    yOffset: 0.02,
                     size: 0.8
                 });
             }
@@ -114,11 +114,13 @@
         });
 
         typewriter
-            .typeString('Sleek. ')
+            .typeString('Sleek ')
+            .pauseFor(300)
+            .typeString('& ')
             .pauseFor(500)
-            .typeString('Modern. ')
-            .pauseFor(500)
-            .typeString('Intuitive.')
+            .typeString('Modern ')
+            .pauseFor(100)
+            .typeString('Design.')
             .start();
     </script>
 </body>
