@@ -53,6 +53,7 @@ body {
     font-family: 'Rubik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #000;
     color: #e8e8e8;
+    overflow: hidden;
 }
 
 .blur {
@@ -109,7 +110,8 @@ main {
 }
 
 h1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
+    max-width: 8ch;
     font-weight: 800;
     background: linear-gradient(-100deg, #1855F0 14.97%, #D218F0 100%);
     background-clip: text;
@@ -130,12 +132,12 @@ h1 {
 }
 
 p {
-    max-width: 35ch;
+    max-width: 32ch;
 }
 
 .content a:hover,
 .content a:active {
-    outline: 1.2px solid #D218F0;
+    outline: 1px solid #D218F0;
     background-color: transparent;
 }
 
@@ -222,10 +224,6 @@ footer {
         padding: var(--pd);
     }
 
-    h1 {
-        font-size: 3.3rem;
-    }
-
     footer {
         padding: var(--pd);
     }
@@ -245,20 +243,16 @@ footer {
         padding: var(--pd);
     }
 
-    h1 {
-        font-size: 4rem;
-    }
-
     footer {
         padding: var(--pd);
     }
 
     p {
-        max-width: 55ch;
+        max-width: 65ch;
     }
 }
 
-@media only screen and (min-width: 1868px) {
+@media only screen and (min-width: 1200px) {
     :root {
         --pd: var(--pb) 27em;
     }
@@ -273,6 +267,6 @@ footer {
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
 }
