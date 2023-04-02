@@ -57,8 +57,8 @@ body {
 }
 
 .blur {
-    backdrop-filter: blur(64px) brightness(40%) saturate(300%);
-    -webkit-backdrop-filter: blur(64px) brightness(40%) saturate(300%);
+    backdrop-filter: blur(64px) brightness(30%) saturate(300%);
+    -webkit-backdrop-filter: blur(64px) brightness(30%) saturate(300%);
 }
 
 header {
@@ -119,6 +119,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(6px 6px 12px rgba(0, 0, 0, 0.5));
 }
 
 .content a {
@@ -143,7 +144,7 @@ h1 {
 
 .content a:hover,
 .content a:active {
-    outline: 1px solid #D218F0;
+    outline: 2px solid #D218F0;
     background-color: transparent;
 }
 
